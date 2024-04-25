@@ -38,7 +38,7 @@ class TokenType(Enum):
     FUN = 27
     FOR = 28
     IF = 29
-    NIL = 30
+    NULL = 30
     OR = 31
     PRINT = 32
     RETURN = 33
@@ -47,7 +47,10 @@ class TokenType(Enum):
     TRUE = 36
     VAR = 37
     WHILE = 38
-    EOF = 39
+    ELSE_IF = 39
+    BEGIN = 40
+    END = 41
+    EOF = 42
 
 class Token():
     def __init__(self, tokenType: TokenType, lexeme: str, literal: str, line: str) -> None:

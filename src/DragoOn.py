@@ -1,11 +1,9 @@
 from lexer.scanner import Scanner
 
 
-class DragoOn():
-    def __init__(self,sourceCode) -> None:
+class DragoOn:
+    def __init__(self, sourceCode) -> None:
         self.scanner = Scanner(sourceCode=sourceCode)
 
     def run(self):
-        print("Hello")
-
-
+        self.scanner.scan()
